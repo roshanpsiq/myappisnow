@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculators</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .calculator-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .calculator {
+            background-color: #ffffff;
+            width: 100%;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            margin: 10px 0;
+        }
+
+        .calculator:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #4caf50;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .input-group input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-calculate {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-calculate:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4caf50;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 480px) {
+            .calculator {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator-container">
+        <!-- First Calculator: Grouped Distribution Mean Calculator -->
+        <div class="calculator">
+            <h2>Grouped Distribution Mean Calculator</h2>
+            <div class="input-group">
+                <label for="midpoints">Midpoints:</label>
+                <input type="text" id="midpoints" placeholder="Enter midpoints">
+            </div>
+            <div class="input-group">
+                <label for="frequencies">Frequencies:</label>
+                <input type="text" id="frequencies" placeholder="Enter frequencies">
+            </div>
+            <button class="btn-calculate" onclick="calculateMean()">Calculate Mean</button>
+            <div class="result" id="result"></div>
+        </div>
+
+        <!-- Second Calculator: Midpoint Calculator -->
+        <div class="calculator">
+            <h2>Midpoint Calculator</h2>
+            <div class="input-group">
+                <label for="lowerBounds">Lower Bounds (comma separated):</label>
+                <input type="text" id="lowerBounds">
+            </div>
+            <div class="input-group">
+                <label for="upperBounds">Upper Bounds (comma separated):</label>
+                <input type="text" id="upperBounds">
+            </div>
+            <button class="btn-calculate" onclick="calculateMidpoints()">Calculate Midpoints</button>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript functions for both calculators
+        function calculateMean() {
+            // ... (your first calculator's JavaScript code) ...
+        }
+
+        function calculateMidpoints() {
+            // ... (your second calculator's JavaScript code) ...
+        }
+    </script>
+</body>
+
+</html>
